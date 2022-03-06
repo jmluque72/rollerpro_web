@@ -34,9 +34,9 @@ ReactDOM.render(
       <Route path="/cloth" component={AdminLayout} />
       <Route path="/source" component={AdminLayout} />
 
-      <Route path="/invoicetype" component={AdminLayout} />
+      <Redirect from="/" to="/customer" />
 
-      chain
+      
 
     </Switch>
   </Router>,
