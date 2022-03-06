@@ -5,6 +5,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 import AdminLayout from "layouts/Admin.jsx";
 import LoginViewPage from "views/Pages/LoginPage.jsx"
+import CustomerViewPage from "views/Components/GenericServlet"
 
 import "assets/scss/material-dashboard-pro-react.scss?v=1.5.0";
 import "assets/css/bootstrap.min.css";
@@ -21,11 +22,22 @@ const hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/admin/loginuser" component={LoginViewPage} />
-      <Route path="/admin" component={AdminLayout} />
+      <Route path="/loginuser" component={LoginViewPage} />
+      <Route path="/customer" component={AdminLayout} />
+      <Route path="/order" component={AdminLayout} />
+      <Route path="/new-order" component={AdminLayout} />
 
+      <Route path="/color" component={AdminLayout} />
+      <Route path="/chain" component={AdminLayout} />
+      <Route path="/plinth" component={AdminLayout} />
+      <Route path="/drop" component={AdminLayout} />
+      <Route path="/cloth" component={AdminLayout} />
+      <Route path="/source" component={AdminLayout} />
 
-      <Redirect from="/" to="/admin/home" />
+      <Route path="/invoicetype" component={AdminLayout} />
+
+      chain
+
     </Switch>
   </Router>,
   document.getElementById("root")

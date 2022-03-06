@@ -399,7 +399,7 @@ onError = (dict) => {
 openNew = () => {
 
   if (this.props.endpoint === 'orders/model?code=order') {
-    window.location = '/admin/new-order';
+    window.location = '/new-order';
   } else {
     this.setState({ data: {}, open: true })
   }

@@ -403,7 +403,7 @@ class NewOrder extends React.Component {
             });
     }
     onSucessDelete = (dict) => {
-        window.location = '/admin/order';
+        window.location = '/order';
     }
 
     onErrorDelete = (dict) => {
@@ -662,7 +662,7 @@ class NewOrder extends React.Component {
     }
 
     onSucessUpdate = (dict) => {
-        window.location = '/admin/order';
+        window.location = '/order';
     }
 
     onErrorUpdate = (dict) => {

@@ -248,14 +248,14 @@ class GenericServlet extends React.Component {
 
   editCustom = (dict) => {
     if (this.state.screen === 'order') {
-      window.location = '/admin/new-order?id=' + dict.id;
+      window.location = '/new-order?id=' + dict.id;
 
     }
   }
 
   deleteCustom = (dict) => {
     if (this.state.screen === 'order') {
-      window.location = '/admin/new-order?idd=' + dict;
+      window.location = '/new-order?idd=' + dict;
 
     }
   }

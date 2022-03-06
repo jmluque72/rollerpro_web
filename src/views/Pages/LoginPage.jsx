@@ -85,7 +85,7 @@ class LoginPage extends React.Component {
           if (response.data) {
               //onSucess(response.data);
               localStorage.setItem("userdata", JSON.stringify(response.data));
-              document.location.href = "/admin/customer";
+              document.location.href = "/customer";
 
           };
       })

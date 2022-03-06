@@ -277,7 +277,7 @@ class Sidebar extends React.Component {
           )}
         >
           <NavLink
-            to={prop.layout + prop.path}
+            to={prop.path}
             className={cx(
               { [navLinkClasses]: prop.icon !== undefined },
               { [innerNavLinkClasses]: prop.icon === undefined }
@@ -310,7 +310,7 @@ class Sidebar extends React.Component {
 
   logout = () => {
     localStorage.removeItem("userdata")
-    document.location.href = "/admin/login_user"
+    document.location.href = "/login_user"
 
   }
 

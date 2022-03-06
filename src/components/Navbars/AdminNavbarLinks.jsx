@@ -62,7 +62,7 @@ class HeaderLinks extends React.Component {
 
     var user = localStorage.getItem('userdata');
     if (!user) {
-        document.location.href = "/admin/loginuser";
+        document.location.href = "/loginuser";
         return <div/>;
     }
 
