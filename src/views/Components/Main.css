@@ -1,0 +1,10 @@
+.swal2-container {
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    z-index: 300000 !important;
+}
+
+  .my-swal {
+    z-index: 300000 !important;
+  }

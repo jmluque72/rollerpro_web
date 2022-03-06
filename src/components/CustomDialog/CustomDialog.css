@@ -1,0 +1,9 @@
+.create-address-title {
+    display: flex;
+}
+.create-address-title h6 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
