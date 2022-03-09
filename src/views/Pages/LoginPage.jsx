@@ -174,39 +174,43 @@ class LoginPage extends React.Component {
                     
                   </CardHeader>
                   <CardBody>
-  
-                    <CustomInput
-                      labelText="Email..."
-                      id="email"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                      inputProps={{
-                        endAdornment: (
-                          <InputAdornment position="end">
-                            <Email className={classes.inputAdornmentIcon} />
-                          </InputAdornment>
-                        )
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Password"
-                      id="password"
-  
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                      inputProps={{
-                        type: "password",
-                        endAdornment: (
-                          <InputAdornment position="end">
-                            <Icon className={classes.inputAdornmentIcon}>
-                              lock_outline
-                            </Icon>
-                          </InputAdornment>
-                        )
-                      }}
-                    />
+                  <GridContainer justify="center">
+                      <GridItem xs={12} sm={12} md={12}>
+
+                        <CustomInput
+                          labelText="Email..."
+                          id="email"
+                          formControlProps={{
+                            fullWidth: true
+                          }}
+                          inputProps={{
+                            endAdornment: (
+                              <InputAdornment position="end">
+                                <Email className={classes.inputAdornmentIcon} />
+                              </InputAdornment>
+                            )
+                          }}
+                        />
+                        <CustomInput
+                          labelText="Password"
+                          id="password"
+      
+                          formControlProps={{
+                            fullWidth: true
+                          }}
+                          inputProps={{
+                            type: "password",
+                            endAdornment: (
+                              <InputAdornment position="end">
+                                <Icon className={classes.inputAdornmentIcon}>
+                                  lock_outline
+                                </Icon>
+                              </InputAdornment>
+                            )
+                          }}
+                        />
+                        </GridItem>
+                      </GridContainer>
                     <div style={{color: 'red'}}>{this.state.error_password }</div>
                     <div>
                     </div>

@@ -113,7 +113,7 @@ function CustomInput({ ...props }) {
       ) : null}
 
       {hasselect == true ?
-        <div>
+        <div style={{width: '100%'}}>
           <p style={{ fontSize: 12, marginBottom: 10 }}>
             &nbsp;
           </p>
@@ -140,9 +140,10 @@ function CustomInput({ ...props }) {
         </div>
 
         :
-        <div>
+        <div style={{width: '100%'}}>
           {money && '$'}
           <Input
+            style={{width: '100%'}}
             classes={{
               input: inputClasses,
               root: marginTop,

@@ -196,6 +196,21 @@ class CustomTable extends React.Component {
     this.getExcel(-1,2, this.onSucessMail, this.onErrorMail);
   }
 
+  // mlg
+  globalPrintTags = () => {
+      var url = settings.URL + "orders/get_all_tags";
+      var user = localStorage.getItem("userdata")
+      var token = "";
+      //this.setState({ showEtiqueta: true });
+      if (user) {
+          var uo = JSON.parse(user);
+          token = uo.session;
+      }
+      var self = this;
+      return window.open(url, "_blank");
+
+  }
+
   globalExcelEnProd = () => {
     this.getExcel(-1,3, this.onSucessMail, this.onErrorMail);
   }
@@ -556,6 +571,17 @@ render() {
                 this.globalExcel();
               }}
             >Exportar excel a producción</Button>
+          </GridItem>
+          <GridItem xs={4} sm={4} md={4} style={{ aligItems: 'right' }}>
+            <Button
+              simple
+              justIcon
+              color='info'
+              style={{ backgroundColor: '#026C7C', color: 'white' }}
+              onClick={() => {
+                this.globalPrintTags();
+              }}
+            >Imprimir etiquetas en producción</Button>
           </GridItem>
           <GridItem xs={4} sm={4} md={4} style={{ aligItems: 'right' }}>
           <Button
